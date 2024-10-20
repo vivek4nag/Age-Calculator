@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    /* color: orangered; */
+    color: #12eda0e0;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #313131;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 0.78rem;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.12em;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #000;
+    color: black;
+    font-weight: 712;
+    text-transform: uppercase;
+    background-color: #e5e5e5d7;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #313131;
+    color: #fff;
+    font-weight: 769;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0.48rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.6s ease-in;
+}
+
+button:hover {
+    background-color: #12b6e8cf;
+    transition: 0.54s ease-out;
+    letter-spacing: 0.062rem;
+    border-radius: 0.48rem;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
