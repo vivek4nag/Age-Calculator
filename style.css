@@ -11,7 +11,8 @@ body {
     margin: 0;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
-    background-color: #313131;
+    background-color: #282828;
+    color: #e0e0e0;
 }
 
 .container {
@@ -22,6 +23,11 @@ body {
     margin: auto;
     border-radius: 0.78rem;
     margin-top: 50px;
+    transition: box-shadow 0.4s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
@@ -31,6 +37,7 @@ h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
     text-decoration: underline;
+    color: #12eda0e0;
 }
 
 .form {
@@ -46,15 +53,22 @@ label {
 }
 
 input {
-    padding: 8px;
-    border: 1px solid #000;
-    color: black;
-    font-weight: 712;
+    padding: 10px;
+    border: 1px solid #555;
+    color: #333;
+    font-weight: 600;
     text-transform: uppercase;
-    background-color: #e5e5e5d7;
+    /* background-color: #e5e5e5d7; */
+    background-color: #f0f0f0;
     border-radius: 5px;
     width: 100%;
     max-width: 300px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus {
+    background-color: #e2e2e2;
+    box-shadow: 0 0 8px rgba(18, 237, 160, 0.3);
+    outline: none;
 }
 
 button {
@@ -72,6 +86,7 @@ button {
 button:hover {
     background-color: #12b6e8cf;
     transition: 0.54s ease-out;
+    /* transform: scale(1.05); */
     letter-spacing: 0.062rem;
     border-radius: 0.48rem;
 }
@@ -82,4 +97,43 @@ button:hover {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+
+
+.container {
+    animation: fadeZoomOut 1s ease-out forwards;
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeZoomOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Slightly zoomed in */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Normal scale */
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    label, button, input[type="date"] {
+        font-size: 0.9rem;
+    }
+
+    #result {
+        font-size: 1rem;
+    }
 }
